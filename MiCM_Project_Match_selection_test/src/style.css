@@ -13,14 +13,6 @@ h1, p , span {
   overflow-x:hidden;
 
 }
-.left {
-  float: left;
-}
-.right {
-  float: right;
-  color: #6c757d;
-  text-align: right;
-}
 .tooltip {
   position: relative;
   display: inline-block;

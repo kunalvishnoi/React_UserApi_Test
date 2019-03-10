@@ -36,7 +36,6 @@ class App extends Component {
     <div>
     <h1 className="heading">Users</h1>
     <div className="container">
-    <div className="left">
     {this.state.picture.map(data => {
           return (
               <div key={data._id}>
@@ -51,23 +50,10 @@ class App extends Component {
                   <b>Zip</b> {data.address.zipcode}
                   </span>
                 </h3>
+                <p style={{float:'right' , color: '#6c757d' }}>({data.username})</p>
                 </div>
-              
           );
         })}
-        </div>
-        <div className="right">
-        {this.state.picture.map(data => {
-          return (
-              <div key={data._id}>
-                <p>
-                  ({data.username})
-                </p>
-                </div>
-              
-          );
-        })}
-        </div>
         </div>
     </div>
     );
